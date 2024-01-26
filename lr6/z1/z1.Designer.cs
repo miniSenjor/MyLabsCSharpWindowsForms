@@ -1,6 +1,6 @@
 ﻿namespace lr6
 {
-    partial class Form1
+    partial class z1
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -40,9 +40,10 @@
             // 
             // btnFack
             // 
-            this.btnFack.Location = new System.Drawing.Point(206, 171);
+            this.btnFack.Location = new System.Drawing.Point(275, 211);
+            this.btnFack.Margin = new System.Windows.Forms.Padding(4);
             this.btnFack.Name = "btnFack";
-            this.btnFack.Size = new System.Drawing.Size(75, 23);
+            this.btnFack.Size = new System.Drawing.Size(100, 28);
             this.btnFack.TabIndex = 0;
             this.btnFack.Text = "Вычислить";
             this.btnFack.UseVisualStyleBackColor = true;
@@ -50,47 +51,46 @@
             // 
             // txtX
             // 
-            this.txtX.Location = new System.Drawing.Point(130, 102);
+            this.txtX.Location = new System.Drawing.Point(174, 125);
+            this.txtX.Margin = new System.Windows.Forms.Padding(4);
             this.txtX.Name = "txtX";
-            this.txtX.Size = new System.Drawing.Size(76, 20);
+            this.txtX.Size = new System.Drawing.Size(100, 22);
             this.txtX.TabIndex = 1;
-            this.txtX.TextChanged += new System.EventHandler(this.txtX_TextChanged);
             // 
             // lblX
             // 
             this.lblX.AutoSize = true;
-            this.lblX.Location = new System.Drawing.Point(108, 104);
+            this.lblX.Location = new System.Drawing.Point(144, 128);
+            this.lblX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblX.Name = "lblX";
-            this.lblX.Size = new System.Drawing.Size(18, 13);
+            this.lblX.Size = new System.Drawing.Size(22, 17);
             this.lblX.TabIndex = 2;
             this.lblX.Text = "x=";
-            this.lblX.Click += new System.EventHandler(this.lblX_Click);
             // 
             // lblFack
             // 
             this.lblFack.AutoSize = true;
-            this.lblFack.Location = new System.Drawing.Point(252, 104);
+            this.lblFack.Location = new System.Drawing.Point(336, 128);
+            this.lblFack.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFack.Name = "lblFack";
-            this.lblFack.Size = new System.Drawing.Size(21, 13);
+            this.lblFack.Size = new System.Drawing.Size(25, 17);
             this.lblFack.TabIndex = 3;
             this.lblFack.Text = "x!=";
-            this.lblFack.Click += new System.EventHandler(this.lblFack_Click);
             // 
             // txtFack
             // 
-            this.txtFack.Location = new System.Drawing.Point(278, 102);
+            this.txtFack.Location = new System.Drawing.Point(371, 125);
+            this.txtFack.Margin = new System.Windows.Forms.Padding(4);
             this.txtFack.Name = "txtFack";
             this.txtFack.ReadOnly = true;
-            this.txtFack.Size = new System.Drawing.Size(100, 20);
+            this.txtFack.Size = new System.Drawing.Size(132, 22);
             this.txtFack.TabIndex = 4;
-            this.txtFack.TextChanged += new System.EventHandler(this.txtFack_TextChanged);
             // 
             // btnChange
             // 
-            this.btnChange.Location = new System.Drawing.Point(10, 11);
-            this.btnChange.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChange.Location = new System.Drawing.Point(13, 13);
             this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(56, 19);
+            this.btnChange.Size = new System.Drawing.Size(75, 23);
             this.btnChange.TabIndex = 5;
             this.btnChange.Text = "x^n";
             this.btnChange.UseVisualStyleBackColor = true;
@@ -98,31 +98,27 @@
             // 
             // txtN
             // 
-            this.txtN.Location = new System.Drawing.Point(130, 126);
-            this.txtN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtN.Location = new System.Drawing.Point(174, 155);
             this.txtN.Name = "txtN";
-            this.txtN.Size = new System.Drawing.Size(76, 20);
+            this.txtN.Size = new System.Drawing.Size(100, 22);
             this.txtN.TabIndex = 6;
             this.txtN.Visible = false;
-            this.txtN.TextChanged += new System.EventHandler(this.txtN_TextChanged);
             // 
             // lblN
             // 
             this.lblN.AutoSize = true;
-            this.lblN.Location = new System.Drawing.Point(106, 126);
-            this.lblN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblN.Location = new System.Drawing.Point(142, 155);
             this.lblN.Name = "lblN";
-            this.lblN.Size = new System.Drawing.Size(19, 13);
+            this.lblN.Size = new System.Drawing.Size(24, 17);
             this.lblN.TabIndex = 7;
             this.lblN.Text = "n=";
             this.lblN.Visible = false;
-            this.lblN.Click += new System.EventHandler(this.lblN_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 259);
+            this.ClientSize = new System.Drawing.Size(659, 319);
             this.Controls.Add(this.lblN);
             this.Controls.Add(this.txtN);
             this.Controls.Add(this.btnChange);
@@ -131,6 +127,7 @@
             this.Controls.Add(this.lblX);
             this.Controls.Add(this.txtX);
             this.Controls.Add(this.btnFack);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "lr6z1";
             this.ResumeLayout(false);

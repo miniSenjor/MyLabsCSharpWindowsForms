@@ -4,9 +4,9 @@ using MathNet.Numerics;
 
 namespace lr6
 {
-    public partial class Form1 : Form
+    public partial class z1 : Form
     {
-        public Form1()
+        public z1()
         {
             InitializeComponent();
         }
@@ -41,36 +41,6 @@ namespace lr6
                 lblN.Visible = false;
                 txtN.Visible = false;
             }
-        }
-
-        private void txtN_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtFack_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblFack_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblX_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtX_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblN_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
