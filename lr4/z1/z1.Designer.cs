@@ -1,7 +1,7 @@
 ﻿
 namespace lr4
 {
-    partial class Form1
+    partial class z1
     {
         /// <summary>
         /// Обязательная переменная конструктора.
