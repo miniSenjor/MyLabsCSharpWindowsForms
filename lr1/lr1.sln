@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33214.272
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "z1", "lr1\z1.csproj", "{4189486C-468C-4608-A447-7E23567A954A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "z2", "z2\z2.csproj", "{10247020-DFE4-4EDC-9808-38C0CA18F4CA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "z4", "z4\z4.csproj", "{43C91F5C-6848-4B99-BA17-238F96C7442A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "z3", "z3\z3.csproj", "{437D62D6-7C98-491F-BBA2-4F898DD2C61F}"
 EndProject
@@ -25,10 +23,6 @@ Global
 		{10247020-DFE4-4EDC-9808-38C0CA18F4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10247020-DFE4-4EDC-9808-38C0CA18F4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10247020-DFE4-4EDC-9808-38C0CA18F4CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43C91F5C-6848-4B99-BA17-238F96C7442A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43C91F5C-6848-4B99-BA17-238F96C7442A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43C91F5C-6848-4B99-BA17-238F96C7442A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43C91F5C-6848-4B99-BA17-238F96C7442A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{437D62D6-7C98-491F-BBA2-4F898DD2C61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{437D62D6-7C98-491F-BBA2-4F898DD2C61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{437D62D6-7C98-491F-BBA2-4F898DD2C61F}.Release|Any CPU.ActiveCfg = Release|Any CPU

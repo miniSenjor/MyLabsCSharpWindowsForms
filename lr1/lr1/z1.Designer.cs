@@ -39,9 +39,10 @@ namespace lr1
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(378, 247);
+            this.btnExit.Location = new System.Drawing.Point(284, 201);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(56, 19);
             this.btnExit.TabIndex = 0;
             this.btnExit.Text = "ВЫход";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -49,57 +50,63 @@ namespace lr1
             // 
             // txtA
             // 
-            this.txtA.Location = new System.Drawing.Point(50, 58);
+            this.txtA.Location = new System.Drawing.Point(38, 47);
+            this.txtA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtA.Name = "txtA";
-            this.txtA.Size = new System.Drawing.Size(100, 22);
+            this.txtA.Size = new System.Drawing.Size(76, 20);
             this.txtA.TabIndex = 1;
             this.txtA.Text = "0";
             // 
             // txtB
             // 
-            this.txtB.Location = new System.Drawing.Point(187, 57);
+            this.txtB.Location = new System.Drawing.Point(140, 46);
+            this.txtB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtB.Name = "txtB";
-            this.txtB.Size = new System.Drawing.Size(100, 22);
+            this.txtB.Size = new System.Drawing.Size(76, 20);
             this.txtB.TabIndex = 2;
             this.txtB.Text = "0";
             // 
             // txtC
             // 
-            this.txtC.Location = new System.Drawing.Point(337, 58);
+            this.txtC.Location = new System.Drawing.Point(253, 47);
+            this.txtC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtC.Name = "txtC";
-            this.txtC.Size = new System.Drawing.Size(100, 22);
+            this.txtC.Size = new System.Drawing.Size(76, 20);
             this.txtC.TabIndex = 3;
             this.txtC.Text = "0";
             // 
             // txtSum
             // 
-            this.txtSum.Location = new System.Drawing.Point(50, 126);
+            this.txtSum.Location = new System.Drawing.Point(38, 102);
+            this.txtSum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSum.Name = "txtSum";
-            this.txtSum.Size = new System.Drawing.Size(100, 22);
+            this.txtSum.Size = new System.Drawing.Size(76, 20);
             this.txtSum.TabIndex = 4;
             // 
             // btnCount
             // 
-            this.btnCount.Location = new System.Drawing.Point(281, 124);
+            this.btnCount.Location = new System.Drawing.Point(211, 101);
+            this.btnCount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCount.Name = "btnCount";
-            this.btnCount.Size = new System.Drawing.Size(102, 23);
+            this.btnCount.Size = new System.Drawing.Size(76, 19);
             this.btnCount.TabIndex = 5;
-            this.btnCount.Text = "ВЫчислить";
+            this.btnCount.Text = "Вычислить";
             this.btnCount.UseVisualStyleBackColor = true;
             this.btnCount.Click += new System.EventHandler(this.btnCount_Click);
             // 
-            // frmSum
+            // z1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnCount);
             this.Controls.Add(this.txtSum);
             this.Controls.Add(this.txtC);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.txtA);
             this.Controls.Add(this.btnExit);
-            this.Name = "frmSum";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "z1";
             this.Text = "z1";
             this.ResumeLayout(false);
             this.PerformLayout();
