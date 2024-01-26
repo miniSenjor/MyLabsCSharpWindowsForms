@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AF6B6EAA-3D96-4817-99A5-CFACC263F510}</ProjectGuid>
+    <ProjectGuid>{810A3E82-EDCE-4ADC-832B-274D7F140851}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>lr9z1</RootNamespace>
-    <AssemblyName>lr9z1</AssemblyName>
+    <RootNamespace>lr4</RootNamespace>
+    <AssemblyName>lr4</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

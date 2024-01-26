@@ -1,6 +1,6 @@
 ﻿namespace lr9z1
 {
-    partial class Form1
+    partial class z1
     {
         /// <summary>
         /// Обязательная переменная конструктора.
