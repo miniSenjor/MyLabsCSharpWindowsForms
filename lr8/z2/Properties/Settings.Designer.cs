@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace lr6.Properties
+namespace lr8z2.Properties
 {
 
 

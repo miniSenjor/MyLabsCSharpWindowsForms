@@ -8,9 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-namespace lr6z2.Properties
+namespace lr8z2.Properties
 {
+
+
     /// <summary>
     ///   Класс ресурсов со строгим типом для поиска локализованных строк и пр.
     /// </summary>
@@ -43,7 +44,7 @@ namespace lr6z2.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("lr6z2.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("lr8z2.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -1,6 +1,6 @@
 ﻿namespace z1
 {
-    partial class Form1
+    partial class z1
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(z1));
             this.pct = new System.Windows.Forms.PictureBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);

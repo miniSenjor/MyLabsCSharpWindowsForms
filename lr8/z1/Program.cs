@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace lr6z2
+namespace lr8
 {
-    static class z2
+    internal static class Program
     {
         /// <summary>
         /// Главная точка входа для приложения.
@@ -16,7 +16,7 @@ namespace lr6z2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new z1());
         }
     }
 }

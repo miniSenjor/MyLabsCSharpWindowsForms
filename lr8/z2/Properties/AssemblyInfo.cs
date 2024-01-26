@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
-[assembly: AssemblyTitle("lr6")]
+[assembly: AssemblyTitle("lr8z2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("lr6")]
+[assembly: AssemblyProduct("lr8z2")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("a01329c5-e5cb-4b72-a9d1-b52d1a5e290e")]
+[assembly: Guid("1342c454-d8d5-4a20-bc67-0caf61a0269a")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
