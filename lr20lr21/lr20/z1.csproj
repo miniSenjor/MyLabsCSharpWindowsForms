@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="lr20z1.cs">
+    <Compile Include="z1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="lr20z1.Designer.cs">
-      <DependentUpon>lr20z1.cs</DependentUpon>
+    <Compile Include="z1.Designer.cs">
+      <DependentUpon>z1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="lr20z1.resx">
-      <DependentUpon>lr20z1.cs</DependentUpon>
+    <EmbeddedResource Include="z1.resx">
+      <DependentUpon>z1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

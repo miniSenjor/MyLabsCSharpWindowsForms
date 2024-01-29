@@ -1,7 +1,7 @@
 ﻿
 namespace lr20
 {
-    partial class lr20z1
+    partial class z1
     {
         /// <summary>
         /// Обязательная переменная конструктора.

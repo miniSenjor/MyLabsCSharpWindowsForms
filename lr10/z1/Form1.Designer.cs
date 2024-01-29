@@ -32,8 +32,8 @@
             this.лабораторнаяРаботаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.форма1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.форма2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,28 +61,28 @@
             // форма1ToolStripMenuItem
             // 
             this.форма1ToolStripMenuItem.Name = "форма1ToolStripMenuItem";
-            this.форма1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.форма1ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.форма1ToolStripMenuItem.Text = "Форма 1";
             this.форма1ToolStripMenuItem.Click += new System.EventHandler(this.форма1ToolStripMenuItem_Click);
             // 
             // форма2ToolStripMenuItem
             // 
             this.форма2ToolStripMenuItem.Name = "форма2ToolStripMenuItem";
-            this.форма2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.форма2ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.форма2ToolStripMenuItem.Text = "Форма 2";
             this.форма2ToolStripMenuItem.Click += new System.EventHandler(this.форма2ToolStripMenuItem_Click);
-            // 
-            // выходToolStripMenuItem
-            // 
-            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.выходToolStripMenuItem.Text = "Выход";
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(118, 6);
+            // 
+            // выходToolStripMenuItem
+            // 
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -93,7 +93,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
-            this.Text = "lr10";
+            this.Text = "lr10z1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

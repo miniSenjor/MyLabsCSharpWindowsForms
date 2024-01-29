@@ -16,7 +16,7 @@ namespace lr20z2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new lr20z2());
+            Application.Run(new z2());
         }
     }
 }

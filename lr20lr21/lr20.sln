@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33214.272
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lr20_1", "lr20_1\lr20_1.csproj", "{B20405C1-18A1-4825-A14F-0FBAF8FFBCB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex1", "lr20_1\ex1.csproj", "{B20405C1-18A1-4825-A14F-0FBAF8FFBCB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lr20z1", "lr20\lr20z1.csproj", "{42C0493D-6E78-4AA2-9C84-BEF07E7CDA32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "z1", "lr20\z1.csproj", "{42C0493D-6E78-4AA2-9C84-BEF07E7CDA32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lr20_2", "lr20_2\lr20_2.csproj", "{5D194EB1-BF2D-49F9-A538-D9DB29B99C27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex2", "lr20_2\ex2.csproj", "{5D194EB1-BF2D-49F9-A538-D9DB29B99C27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lr20z2", "lr20z2\lr20z2.csproj", "{68C0A11B-BE02-4DF7-BA22-10C0434A2152}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "z2", "lr20z2\z2.csproj", "{68C0A11B-BE02-4DF7-BA22-10C0434A2152}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

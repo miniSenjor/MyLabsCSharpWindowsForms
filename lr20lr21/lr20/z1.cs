@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace lr20
 {
-    public partial class lr20z1 : Form
+    public partial class z1 : Form
     {
-        public lr20z1()
+        public z1()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace lr20
             FileStream fs = new FileStream(fName, FileMode.Open);
             //создать объект для записи в текстовый файл
             StreamWriter sw = new StreamWriter(fs);
-            int k = 0; // счетчик байтов
+            int k = 0;
             char chStart='0', chOld='0', ch = '0';
             //ставим указатель на начало файла
             fs.Seek(0, SeekOrigin.Begin);
