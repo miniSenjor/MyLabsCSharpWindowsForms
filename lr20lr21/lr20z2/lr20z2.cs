@@ -31,7 +31,7 @@ namespace lr20z2
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            string[] s = File.ReadAllLines(fName);
+            /*string[] s = File.ReadAllLines(fName);
             Date[] dates = new Date[s.Length];
             string day, month, year;
             for (int i=0;i<s.Length;i++)
@@ -43,7 +43,7 @@ namespace lr20z2
             }
 
             //создать объект для записи в текстовый файл
-            Date date; 
+            Date date;
             using (FileStream fileStream = new FileStream(fName, FileMode.Open))
             {
                 BinaryFormatter binaryFormatter = new BinaryFormatter();
@@ -51,6 +51,11 @@ namespace lr20z2
                 {
                     date = (Date)binaryFormatter.Deserialize(fileStream);
                 }
+            }*/
+            List<Date> dates = new List<Date>();
+            FileStream fs = new FileStream(fName, FileMode.Open, FileAccess.ReadWrite);
+            StreamWriter sw = new StreamWriter(fs);
+            sw.WriteLine();
         }
     }
 }
