@@ -1,7 +1,7 @@
 ﻿
 namespace lr20_1
 {
-    partial class lr20_1
+    partial class ex1
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -67,7 +67,7 @@ namespace lr20_1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // lr20_1
+            // ex1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -75,8 +75,8 @@ namespace lr20_1
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.btnSelectionFIle);
-            this.Name = "lr20_1";
-            this.Text = "lr20_1";
+            this.Name = "ex1";
+            this.Text = "lr20ex1";
             this.ResumeLayout(false);
             this.PerformLayout();
 

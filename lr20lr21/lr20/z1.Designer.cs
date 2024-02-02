@@ -77,7 +77,7 @@ namespace lr20
             this.label1.TabIndex = 6;
             this.label1.Text = "Строк в начале и в конце которых один символ:";
             // 
-            // lr20
+            // z1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -86,8 +86,8 @@ namespace lr20
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.btnSelectionFIle);
-            this.Name = "lr20";
-            this.Text = "Form1";
+            this.Name = "z1";
+            this.Text = "lr20z1";
             this.ResumeLayout(false);
             this.PerformLayout();
 

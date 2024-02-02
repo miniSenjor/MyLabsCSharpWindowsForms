@@ -1,7 +1,7 @@
 ﻿
 namespace lr20_2
 {
-    partial class lr20_2
+    partial class ex2
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -178,7 +178,7 @@ namespace lr20_2
             this.listBox1.Size = new System.Drawing.Size(181, 244);
             this.listBox1.TabIndex = 5;
             // 
-            // lr20_2
+            // ex2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -189,8 +189,8 @@ namespace lr20_2
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.btnMakeArr);
-            this.Name = "lr20_2";
-            this.Text = "Form1";
+            this.Name = "ex2";
+            this.Text = "lr20ex2";
             this.Load += new System.EventHandler(this.lr20_2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
