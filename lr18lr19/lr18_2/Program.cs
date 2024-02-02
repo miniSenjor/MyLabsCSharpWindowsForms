@@ -16,7 +16,7 @@ namespace lr18_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new lr18_2());
+            Application.Run(new ex2());
         }
     }
 }

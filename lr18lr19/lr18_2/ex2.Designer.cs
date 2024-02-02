@@ -1,6 +1,6 @@
 ﻿namespace lr18_2
 {
-    partial class lr18_2
+    partial class ex2
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -37,9 +37,10 @@
             // 
             // btnNewStringEvenIndex
             // 
-            this.btnNewStringEvenIndex.Location = new System.Drawing.Point(137, 100);
+            this.btnNewStringEvenIndex.Location = new System.Drawing.Point(183, 123);
+            this.btnNewStringEvenIndex.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNewStringEvenIndex.Name = "btnNewStringEvenIndex";
-            this.btnNewStringEvenIndex.Size = new System.Drawing.Size(200, 23);
+            this.btnNewStringEvenIndex.Size = new System.Drawing.Size(267, 28);
             this.btnNewStringEvenIndex.TabIndex = 0;
             this.btnNewStringEvenIndex.Text = "Сформировать новую строку";
             this.btnNewStringEvenIndex.UseVisualStyleBackColor = true;
@@ -47,48 +48,53 @@
             // 
             // txtString
             // 
-            this.txtString.Location = new System.Drawing.Point(112, 74);
+            this.txtString.Location = new System.Drawing.Point(149, 91);
+            this.txtString.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtString.Name = "txtString";
-            this.txtString.Size = new System.Drawing.Size(266, 20);
+            this.txtString.Size = new System.Drawing.Size(353, 22);
             this.txtString.TabIndex = 1;
             // 
             // txtNewString
             // 
-            this.txtNewString.Location = new System.Drawing.Point(112, 142);
+            this.txtNewString.Location = new System.Drawing.Point(149, 175);
+            this.txtNewString.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNewString.Name = "txtNewString";
-            this.txtNewString.Size = new System.Drawing.Size(266, 20);
+            this.txtNewString.Size = new System.Drawing.Size(353, 22);
             this.txtNewString.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(109, 58);
+            this.label1.Location = new System.Drawing.Point(145, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.Size = new System.Drawing.Size(111, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Введите строку";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(109, 126);
+            this.label2.Location = new System.Drawing.Point(145, 155);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
+            this.label2.Size = new System.Drawing.Size(126, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Строка результат";
             // 
-            // lr18_2
+            // ex2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 250);
+            this.ClientSize = new System.Drawing.Size(688, 308);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNewString);
             this.Controls.Add(this.txtString);
             this.Controls.Add(this.btnNewStringEvenIndex);
-            this.Name = "lr18_2";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "ex2";
+            this.Text = "lr18ex2";
             this.ResumeLayout(false);
             this.PerformLayout();
 

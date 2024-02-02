@@ -39,9 +39,10 @@
             // 
             // btnMakeName
             // 
-            this.btnMakeName.Location = new System.Drawing.Point(212, 66);
+            this.btnMakeName.Location = new System.Drawing.Point(283, 81);
+            this.btnMakeName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMakeName.Name = "btnMakeName";
-            this.btnMakeName.Size = new System.Drawing.Size(147, 23);
+            this.btnMakeName.Size = new System.Drawing.Size(196, 28);
             this.btnMakeName.TabIndex = 0;
             this.btnMakeName.Text = "Можно ли составть имя";
             this.btnMakeName.UseVisualStyleBackColor = true;
@@ -49,60 +50,66 @@
             // 
             // txtLetters
             // 
-            this.txtLetters.Location = new System.Drawing.Point(82, 66);
+            this.txtLetters.Location = new System.Drawing.Point(109, 81);
+            this.txtLetters.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLetters.Name = "txtLetters";
-            this.txtLetters.Size = new System.Drawing.Size(100, 20);
+            this.txtLetters.Size = new System.Drawing.Size(132, 22);
             this.txtLetters.TabIndex = 1;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(82, 118);
+            this.txtName.Location = new System.Drawing.Point(109, 145);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.Size = new System.Drawing.Size(132, 22);
             this.txtName.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 66);
+            this.label1.Location = new System.Drawing.Point(41, 81);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.Size = new System.Drawing.Size(48, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Буквы";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 118);
+            this.label2.Location = new System.Drawing.Point(41, 145);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.Size = new System.Drawing.Size(35, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Имя";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(232, 121);
+            this.label3.Location = new System.Drawing.Point(309, 149);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 13);
+            this.label3.Size = new System.Drawing.Size(121, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Составить имя ...";
             // 
             // checkRepeatLetters
             // 
             this.checkRepeatLetters.AutoSize = true;
-            this.checkRepeatLetters.Location = new System.Drawing.Point(82, 170);
+            this.checkRepeatLetters.Location = new System.Drawing.Point(109, 209);
+            this.checkRepeatLetters.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkRepeatLetters.Name = "checkRepeatLetters";
-            this.checkRepeatLetters.Size = new System.Drawing.Size(254, 17);
+            this.checkRepeatLetters.Size = new System.Drawing.Size(318, 21);
             this.checkRepeatLetters.TabIndex = 6;
             this.checkRepeatLetters.Text = "Буквы могут использоваться несколько раз";
             this.checkRepeatLetters.UseVisualStyleBackColor = true;
             // 
             // lr18
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 242);
+            this.ClientSize = new System.Drawing.Size(637, 298);
             this.Controls.Add(this.checkRepeatLetters);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -110,8 +117,9 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtLetters);
             this.Controls.Add(this.btnMakeName);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "lr18";
-            this.Text = "Form1";
+            this.Text = "lr18z1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
