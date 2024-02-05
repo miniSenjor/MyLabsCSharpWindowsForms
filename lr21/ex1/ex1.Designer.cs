@@ -66,7 +66,7 @@
             this.txtResult.Location = new System.Drawing.Point(221, 32);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(216, 110);
+            this.txtResult.Size = new System.Drawing.Size(287, 110);
             this.txtResult.TabIndex = 4;
             // 
             // btnStart
@@ -91,7 +91,7 @@
             this.groupBox1.Controls.Add(this.txtProfession);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(466, 172);
+            this.groupBox1.Size = new System.Drawing.Size(527, 172);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Информация";
@@ -127,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 216);
+            this.ClientSize = new System.Drawing.Size(560, 229);
             this.Controls.Add(this.groupBox1);
             this.Name = "ex1";
             this.Text = "lr21ex1";

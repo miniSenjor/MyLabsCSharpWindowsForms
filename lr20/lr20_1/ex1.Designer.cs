@@ -1,7 +1,7 @@
 ﻿
 namespace lr20_1
 {
-    partial class lr20_1
+    partial class ex1
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -37,9 +37,10 @@ namespace lr20_1
             // 
             // btnSelectionFIle
             // 
-            this.btnSelectionFIle.Location = new System.Drawing.Point(39, 69);
+            this.btnSelectionFIle.Location = new System.Drawing.Point(29, 56);
+            this.btnSelectionFIle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSelectionFIle.Name = "btnSelectionFIle";
-            this.btnSelectionFIle.Size = new System.Drawing.Size(114, 23);
+            this.btnSelectionFIle.Size = new System.Drawing.Size(86, 19);
             this.btnSelectionFIle.TabIndex = 0;
             this.btnSelectionFIle.Text = "Выбрать файл";
             this.btnSelectionFIle.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@ namespace lr20_1
             // 
             // btnCalc
             // 
-            this.btnCalc.Location = new System.Drawing.Point(208, 69);
+            this.btnCalc.Location = new System.Drawing.Point(156, 56);
+            this.btnCalc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCalc.Name = "btnCalc";
-            this.btnCalc.Size = new System.Drawing.Size(113, 23);
+            this.btnCalc.Size = new System.Drawing.Size(85, 19);
             this.btnCalc.TabIndex = 1;
             this.btnCalc.Text = "Вычислить";
             this.btnCalc.UseVisualStyleBackColor = true;
@@ -57,26 +59,28 @@ namespace lr20_1
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 122);
+            this.textBox1.Location = new System.Drawing.Point(29, 99);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 166);
+            this.textBox1.Size = new System.Drawing.Size(212, 136);
             this.textBox1.TabIndex = 2;
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // lr20_1
+            // ex1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 360);
+            this.ClientSize = new System.Drawing.Size(278, 292);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.btnSelectionFIle);
-            this.Name = "lr20_1";
-            this.Text = "lr20_1";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "ex1";
+            this.Text = "lr20ex1";
             this.ResumeLayout(false);
             this.PerformLayout();
 

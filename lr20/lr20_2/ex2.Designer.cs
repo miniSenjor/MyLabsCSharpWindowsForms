@@ -1,7 +1,7 @@
 ﻿
 namespace lr20_2
 {
-    partial class lr20_2
+    partial class ex2
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -52,9 +52,10 @@ namespace lr20_2
             // 
             // btnMakeArr
             // 
-            this.btnMakeArr.Location = new System.Drawing.Point(210, 95);
+            this.btnMakeArr.Location = new System.Drawing.Point(158, 77);
+            this.btnMakeArr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMakeArr.Name = "btnMakeArr";
-            this.btnMakeArr.Size = new System.Drawing.Size(181, 23);
+            this.btnMakeArr.Size = new System.Drawing.Size(136, 19);
             this.btnMakeArr.TabIndex = 0;
             this.btnMakeArr.Text = "Сформировать массивы";
             this.btnMakeArr.UseVisualStyleBackColor = true;
@@ -62,9 +63,10 @@ namespace lr20_2
             // 
             // btnCalc
             // 
-            this.btnCalc.Location = new System.Drawing.Point(758, 95);
+            this.btnCalc.Location = new System.Drawing.Point(568, 77);
+            this.btnCalc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCalc.Name = "btnCalc";
-            this.btnCalc.Size = new System.Drawing.Size(91, 23);
+            this.btnCalc.Size = new System.Drawing.Size(68, 19);
             this.btnCalc.TabIndex = 1;
             this.btnCalc.Text = "Вычислить";
             this.btnCalc.UseVisualStyleBackColor = true;
@@ -72,17 +74,19 @@ namespace lr20_2
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(210, 26);
+            this.numericUpDown1.Location = new System.Drawing.Point(158, 21);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
+            this.numericUpDown1.Size = new System.Drawing.Size(90, 20);
             this.numericUpDown1.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 26);
+            this.label1.Location = new System.Drawing.Point(22, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 17);
+            this.label1.Size = new System.Drawing.Size(138, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Введите кол-во массивов";
             // 
@@ -102,11 +106,12 @@ namespace lr20_2
             this.Column8,
             this.Column9,
             this.Column10});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 124);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 101);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(722, 242);
+            this.dataGridView1.Size = new System.Drawing.Size(542, 197);
             this.dataGridView1.TabIndex = 4;
             // 
             // Column1
@@ -172,25 +177,26 @@ namespace lr20_2
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(740, 124);
+            this.listBox1.Location = new System.Drawing.Point(555, 101);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(181, 244);
+            this.listBox1.Size = new System.Drawing.Size(137, 199);
             this.listBox1.TabIndex = 5;
             // 
-            // lr20_2
+            // ex2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 450);
+            this.ClientSize = new System.Drawing.Size(700, 366);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.btnMakeArr);
-            this.Name = "lr20_2";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "ex2";
+            this.Text = "lr20ex2";
             this.Load += new System.EventHandler(this.lr20_2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

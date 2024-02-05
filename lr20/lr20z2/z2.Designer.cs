@@ -40,7 +40,7 @@ namespace lr20z2
             // btnOpenFile
             // 
             this.btnOpenFile.Location = new System.Drawing.Point(203, 43);
-            this.btnOpenFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOpenFile.Margin = new System.Windows.Forms.Padding(2);
             this.btnOpenFile.Name = "btnOpenFile";
             this.btnOpenFile.Size = new System.Drawing.Size(86, 19);
             this.btnOpenFile.TabIndex = 0;
@@ -51,7 +51,7 @@ namespace lr20z2
             // txtEnteredDate
             // 
             this.txtEnteredDate.Location = new System.Drawing.Point(59, 44);
-            this.txtEnteredDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEnteredDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtEnteredDate.Name = "txtEnteredDate";
             this.txtEnteredDate.Size = new System.Drawing.Size(76, 20);
             this.txtEnteredDate.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace lr20z2
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(203, 84);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(86, 19);
             this.btnDelete.TabIndex = 2;
@@ -100,9 +100,9 @@ namespace lr20z2
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.txtEnteredDate);
             this.Controls.Add(this.btnOpenFile);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "z2";
-            this.Text = "Form1";
+            this.Text = "lr20z2";
             this.ResumeLayout(false);
             this.PerformLayout();
 

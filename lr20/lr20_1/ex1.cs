@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace lr20_1
 {
-    public partial class lr20_1 : Form
+    public partial class ex1 : Form
     {
-        public lr20_1()
+        public ex1()
         {
             InitializeComponent();
         }

@@ -38,17 +38,19 @@ namespace lr20
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(53, 97);
+            this.textBox1.Location = new System.Drawing.Point(40, 79);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 166);
+            this.textBox1.Size = new System.Drawing.Size(212, 136);
             this.textBox1.TabIndex = 5;
             // 
             // btnCalc
             // 
-            this.btnCalc.Location = new System.Drawing.Point(222, 44);
+            this.btnCalc.Location = new System.Drawing.Point(166, 36);
+            this.btnCalc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCalc.Name = "btnCalc";
-            this.btnCalc.Size = new System.Drawing.Size(113, 23);
+            this.btnCalc.Size = new System.Drawing.Size(85, 19);
             this.btnCalc.TabIndex = 4;
             this.btnCalc.Text = "Вычислить";
             this.btnCalc.UseVisualStyleBackColor = true;
@@ -56,9 +58,10 @@ namespace lr20
             // 
             // btnSelectionFIle
             // 
-            this.btnSelectionFIle.Location = new System.Drawing.Point(53, 44);
+            this.btnSelectionFIle.Location = new System.Drawing.Point(40, 36);
+            this.btnSelectionFIle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSelectionFIle.Name = "btnSelectionFIle";
-            this.btnSelectionFIle.Size = new System.Drawing.Size(114, 23);
+            this.btnSelectionFIle.Size = new System.Drawing.Size(86, 19);
             this.btnSelectionFIle.TabIndex = 3;
             this.btnSelectionFIle.Text = "Выбрать файл";
             this.btnSelectionFIle.UseVisualStyleBackColor = true;
@@ -71,23 +74,25 @@ namespace lr20
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 286);
+            this.label1.Location = new System.Drawing.Point(9, 232);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 17);
+            this.label1.Size = new System.Drawing.Size(251, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Строк в начале и в конце которых один символ:";
             // 
-            // lr20
+            // z1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 335);
+            this.ClientSize = new System.Drawing.Size(308, 272);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.btnSelectionFIle);
-            this.Name = "lr20";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "z1";
+            this.Text = "lr20z1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
