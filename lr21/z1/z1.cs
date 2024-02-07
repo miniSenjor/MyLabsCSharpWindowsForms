@@ -16,5 +16,10 @@ namespace z1
         {
             InitializeComponent();
         }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < groupBox1.;)
+        }
     }
 }

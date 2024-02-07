@@ -8,18 +8,20 @@ namespace z1
 {
     internal class Polynomial
     {
-        float a, b, c;
-        public Polynomial(float a, float b, float c)
+        float[] arr;
+        public Polynomial(params float[] arr)
         {
-            this.a = a;
-            this.b = b;
-            this.c = c;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                this.arr[i] = arr[i];
+            }
         }
         public void Sum(Polynomial term)
         {
-            this.a += term.a;
-            this.b += term.b;
-            this.c += term.c;
+            for(int i = 0;i < arr.Length;i++)
+            {
+                this.arr[i] += term.arr[i];
+            }
         }
     }
 }

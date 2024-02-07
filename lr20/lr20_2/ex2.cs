@@ -13,7 +13,7 @@ namespace lr20_2
 
         string fName;
 
-        private void lr20_2_Load(object sender, EventArgs e)
+        private void ex2_Load(object sender, EventArgs e)
         {
             //По умолчанию - один массив, т.е. одна строка в таблице
             dataGridView1.RowCount = 1;
@@ -29,7 +29,12 @@ namespace lr20_2
             //количество массивов берем из счетчика на форме
             int kol = (int)numericUpDown1.Value;
             //установить соответствующее кол-во строк в таблице
-            dataGridView1.RowCount = kol;
+            if (kol<1)
+            {
+                MessageBox.Show("Слишком маленький массив");
+                return;
+            }
+                dataGridView1.RowCount = kol;
             //запросить у пользователя имя двоичного файла для записи
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
  {

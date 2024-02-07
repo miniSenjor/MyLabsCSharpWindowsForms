@@ -197,7 +197,7 @@ namespace lr20_2
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ex2";
             this.Text = "lr20ex2";
-            this.Load += new System.EventHandler(this.lr20_2_Load);
+            this.Load += new System.EventHandler(this.ex2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
