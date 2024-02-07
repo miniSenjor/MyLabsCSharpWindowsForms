@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace lr18
 {
-    public partial class lr18_1 : Form
+    public partial class ex1 : Form
     {
-        public lr18_1()
+        public ex1()
         {
             InitializeComponent();
         }
