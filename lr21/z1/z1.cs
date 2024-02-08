@@ -19,7 +19,26 @@ namespace z1
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < groupBox1.;)
+            int i = 0;
+            float[] arrPol = new float[3];
+            foreach (TextBox textBox in groupBox1.Controls.OfType<TextBox>())
+            {
+                arrPol[i] = float.Parse(textBox.Text);
+                i++;
+            }
+            Polynomial pol = new Polynomial(arrPol);
+            float x1, x2;
+            pol.SovleThePolynom(out x1, out x2);
+            lbX1.Text = "x1=" + x1;
+            lbX2.Text = "x2=" + x2;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            foreach (TextBox textBox in groupBox1.Controls.OfType<TextBox>())
+            {
+                textBox.Text = "";
+            }
         }
     }
 }
