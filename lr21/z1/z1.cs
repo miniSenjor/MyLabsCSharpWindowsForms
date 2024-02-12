@@ -21,9 +21,16 @@ namespace z1
         {
             Polynomial pol = createPolynomialFromGropBox(groupBox1);
             double x1, x2;
-            pol.SovleThePolynom(out x1, out x2);
-            lbX1.Text = "x1=" + x1;
-            lbX2.Text = "x2=" + x2;
+            if (pol.SovleThePolynom(out x1, out x2) == -1)
+            {
+                label7.Text = "нет корней";
+                label8.Text = "нет корней";
+            }
+            else
+            {
+                label7.Text = "x1=" + x1;
+                label8.Text = "x2=" + x2;
+            }
         }
 
         private void btnCalc2_Click(object sender, EventArgs e)
@@ -32,13 +39,13 @@ namespace z1
             double x1, x2;
             if (pol.SovleThePolynom(out x1, out x2)==-1)
             {
-                lbX1.Text = "нет корней";
-                lbX2.Text = "нет корней";
+                label9.Text = "нет корней";
+                label10.Text = "нет корней";
             }
             else
             {
-                lbX1.Text = "x1=" + x1;
-                lbX2.Text = "x2=" + x2;
+                label9.Text = "x1=" + x1;
+                label10.Text = "x2=" + x2;
             }
         }
 
@@ -58,27 +65,58 @@ namespace z1
         private void btnSum_Click(object sender, EventArgs e)
         {
             Polynomial pol1 = createPolynomialFromGropBox(groupBox1);
-            Polynomial pol2 = createPolynomialFromGropBox(groupBox1);
+            Polynomial pol2 = createPolynomialFromGropBox(groupBox2);
             pol1.Sum(pol1, pol2);
             lbResult.Text = "";
-            for (int i = 0; i < pol1.arr.Length; i++)
-                lbResult.Text += pol1.arr[i];
+            for (int i = pol1.arr.Length-1; i >= 0; i--)
+            {
+                lbResult.Text += " " + pol1.arr[i];
+                if (i > 0)
+                {
+                    lbResult.Text += $"x^{i}";
+                    if (pol1.arr[i-1] >= 0) lbResult.Text += "+";
+                }
+            }
         }
 
         private void btnSub_Click(object sender, EventArgs e)
         {
-
+            Polynomial pol1 = createPolynomialFromGropBox(groupBox1);
+            Polynomial pol2 = createPolynomialFromGropBox(groupBox2);
+            pol1.Subtract(pol1, pol2);
+            lbResult.Text = "";
+            for (int i = pol1.arr.Length-1; i >=0; i--)
+            {
+                lbResult.Text += " " + pol1.arr[i];
+                if (i > 0)
+                {
+                    lbResult.Text += $"x^{i}";
+                    if (pol1.arr[i-1] >= 0) lbResult.Text += "+";
+                }
+            }
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
         {
-
+            Polynomial pol1 = createPolynomialFromGropBox(groupBox1);
+            Polynomial pol2 = createPolynomialFromGropBox(groupBox2);
+            pol1 = pol1.Multiply(pol1, pol2);
+            lbResult.Text = "";
+            for (int i = pol1.arr.Length-1; i >=0 ; i--)
+            {
+                lbResult.Text += " " + pol1.arr[i];
+                if (i > 0)
+                {
+                    lbResult.Text += $"x^{i}";
+                    if (pol1.arr[i-1] >= 0) lbResult.Text += " +";
+                }
+            }
         }
 
         private Polynomial createPolynomialFromGropBox(GroupBox groupBox)
         {
             int i = 0;
-            float[] arrPol = new float[3];
+            double[] arrPol = new double[3];
             foreach (TextBox textBox in groupBox.Controls.OfType<TextBox>())
             {
                 try
@@ -95,5 +133,31 @@ namespace z1
             Polynomial pol = new Polynomial(arrPol);
             return pol;
         }
+
+        private void z1_Load(object sender, EventArgs e)
+        {
+            lbResult.Text = "";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Polynomial pol = createPolynomialFromGropBox(groupBox1);
+            label11.Text = "Многочлен1: ";
+            if (pol.arr[2]!=0)
+            {
+
+                if (pol.arr[2] > 0) label11.Text += "ветви вверх";
+                else if label11.Text += "ветви вниз";
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Polynomial pol = createPolynomialFromGropBox(groupBox2);
+            label12.Text = "Многочлен2: ";
+            if (pol.arr[2] > 0) label12.Text += "ветви вверх";
+            else label12.Text += "ветви вниз";
+        }
     }
 }
+

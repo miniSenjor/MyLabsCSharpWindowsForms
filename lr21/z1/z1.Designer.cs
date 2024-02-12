@@ -39,26 +39,32 @@
             this.btnSub = new System.Windows.Forms.Button();
             this.btnMultiply = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
-            this.lbX1 = new System.Windows.Forms.Label();
-            this.lbX2 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.lbResult = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnCalc2 = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -67,12 +73,14 @@
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCalc1
             // 
             this.btnCalc1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalc1.Location = new System.Drawing.Point(45, 22);
+            this.btnCalc1.Location = new System.Drawing.Point(31, 22);
             this.btnCalc1.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalc1.Name = "btnCalc1";
             this.btnCalc1.Size = new System.Drawing.Size(100, 28);
@@ -189,30 +197,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Первый многочлен";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(287, 32);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(76, 22);
-            this.textBox4.TabIndex = 9;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(24, 32);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(80, 22);
-            this.textBox5.TabIndex = 7;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(157, 32);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(92, 22);
-            this.textBox6.TabIndex = 8;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -236,7 +220,7 @@
             // btnClear
             // 
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClear.Location = new System.Drawing.Point(45, 63);
+            this.btnClear.Location = new System.Drawing.Point(31, 63);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(100, 28);
@@ -245,32 +229,32 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // lbX1
+            // label7
             // 
-            this.lbX1.AutoSize = true;
-            this.lbX1.Location = new System.Drawing.Point(16, 31);
-            this.lbX1.Name = "lbX1";
-            this.lbX1.Size = new System.Drawing.Size(30, 17);
-            this.lbX1.TabIndex = 13;
-            this.lbX1.Text = "x1=";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(16, 31);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(30, 17);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "x1=";
             // 
-            // lbX2
+            // label8
             // 
-            this.lbX2.AutoSize = true;
-            this.lbX2.Location = new System.Drawing.Point(163, 31);
-            this.lbX2.Name = "lbX2";
-            this.lbX2.Size = new System.Drawing.Size(30, 17);
-            this.lbX2.TabIndex = 14;
-            this.lbX2.Text = "x2=";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(122, 31);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(30, 17);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "x2=";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox2.Location = new System.Drawing.Point(18, 112);
             this.groupBox2.Name = "groupBox2";
@@ -279,18 +263,44 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Второй многочлен";
             // 
-            // label8
+            // textBox6
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(371, 35);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 17);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "=0";
+            this.textBox6.Location = new System.Drawing.Point(288, 32);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(76, 22);
+            this.textBox6.TabIndex = 9;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(157, 33);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(76, 22);
+            this.textBox5.TabIndex = 8;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(29, 33);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(76, 22);
+            this.textBox4.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(371, 35);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(24, 17);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "=0";
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.groupBox10);
+            this.groupBox3.Controls.Add(this.groupBox9);
             this.groupBox3.Controls.Add(this.groupBox8);
             this.groupBox3.Controls.Add(this.groupBox7);
             this.groupBox3.Controls.Add(this.groupBox6);
@@ -335,47 +345,48 @@
             this.lbResult.AutoSize = true;
             this.lbResult.Location = new System.Drawing.Point(13, 25);
             this.lbResult.Name = "lbResult";
-            this.lbResult.Size = new System.Drawing.Size(0, 17);
+            this.lbResult.Size = new System.Drawing.Size(130, 17);
             this.lbResult.TabIndex = 0;
+            this.lbResult.Text = "Здесь будет ответ";
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.label6);
-            this.groupBox6.Controls.Add(this.label7);
+            this.groupBox6.Controls.Add(this.label9);
+            this.groupBox6.Controls.Add(this.label10);
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox6.Location = new System.Drawing.Point(667, 121);
+            this.groupBox6.Location = new System.Drawing.Point(749, 121);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(312, 64);
+            this.groupBox6.Size = new System.Drawing.Size(230, 64);
             this.groupBox6.TabIndex = 19;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Корни для второго многочлена";
             // 
-            // label6
+            // label9
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 31);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(30, 17);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "x1=";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(16, 31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(30, 17);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "x1=";
             // 
-            // label7
+            // label10
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(163, 31);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(30, 17);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "x2=";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(122, 31);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(30, 17);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "x2=";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.lbX1);
-            this.groupBox5.Controls.Add(this.lbX2);
+            this.groupBox5.Controls.Add(this.label7);
+            this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox5.Location = new System.Drawing.Point(667, 35);
+            this.groupBox5.Location = new System.Drawing.Point(749, 35);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(312, 64);
+            this.groupBox5.Size = new System.Drawing.Size(230, 64);
             this.groupBox5.TabIndex = 18;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Корни для первого многочлена";
@@ -386,9 +397,9 @@
             this.groupBox4.Controls.Add(this.btnClear);
             this.groupBox4.Controls.Add(this.btnCalc1);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox4.Location = new System.Drawing.Point(450, 35);
+            this.groupBox4.Location = new System.Drawing.Point(433, 31);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(191, 150);
+            this.groupBox4.Size = new System.Drawing.Size(157, 154);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Вычисление корней";
@@ -396,7 +407,7 @@
             // btnCalc2
             // 
             this.btnCalc2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalc2.Location = new System.Drawing.Point(45, 104);
+            this.btnCalc2.Location = new System.Drawing.Point(31, 104);
             this.btnCalc2.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalc2.Name = "btnCalc2";
             this.btnCalc2.Size = new System.Drawing.Size(100, 28);
@@ -404,6 +415,71 @@
             this.btnCalc2.Text = "Вычислить";
             this.btnCalc2.UseVisualStyleBackColor = true;
             this.btnCalc2.Click += new System.EventHandler(this.btnCalc2_Click);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.button3);
+            this.groupBox9.Controls.Add(this.button5);
+            this.groupBox9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.groupBox9.Location = new System.Drawing.Point(596, 31);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(147, 154);
+            this.groupBox9.TabIndex = 18;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Вывод инф-ы о многочлене";
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Location = new System.Drawing.Point(25, 105);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 28);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Показать";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Location = new System.Drawing.Point(25, 36);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(100, 28);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Показать";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.label12);
+            this.groupBox10.Controls.Add(this.label11);
+            this.groupBox10.Location = new System.Drawing.Point(443, 210);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(407, 100);
+            this.groupBox10.TabIndex = 22;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Инф-а о многочленах";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(21, 26);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(84, 17);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Многолен1:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(21, 65);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(84, 17);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Многолен2:";
             // 
             // z1
             // 
@@ -417,6 +493,7 @@
             this.Name = "z1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "lr21z1";
+            this.Load += new System.EventHandler(this.z1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -430,6 +507,9 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -447,26 +527,32 @@
         private System.Windows.Forms.Button btnSub;
         private System.Windows.Forms.Button btnMultiply;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Label lbX1;
-        private System.Windows.Forms.Label lbX2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label lbResult;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnCalc2;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
     }
 }
 
