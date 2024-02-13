@@ -22,29 +22,18 @@ namespace z1
         //свойство для доступа к имю книги
         public string name
         {
-            get { return name; } //получить y
+            get { return Name; } //получить y
             set { Name = value; } //установить y
         }
         public string autor
         {
-            get { return autor; } //получить y
+            get { return Autor; } //получить y
             set { Autor = value; } //установить y
         }
         public int countPages
         {
-            get { return countPages; } //получить y
+            get { return CountPages; } //получить y
             set { CountPages = value; } //установить y
         }
-        /*установить способ сравнения объектов-точек
-        public int CompareTo(object obj)
-        {
-            //преобразуем параметр obj к типу точки
-            Point p = (Point)obj;
-            if (x > p.x) //сравниваем координаты х
-                return 1; //и возвращаем либо положительное,
-            if (x == p.x)
-                return 0; //либо нулевое,
-            return -1; //либо отрицательное значение
-        }*/
     }
 }

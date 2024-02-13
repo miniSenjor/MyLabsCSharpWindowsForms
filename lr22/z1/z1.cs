@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace z1
@@ -30,6 +24,9 @@ namespace z1
                 int countPages = int.Parse(txtCountPages.Text);
                 Book book = new Book(name, autor, countPages);
                 books.Add(book);
+                txtName.Text = "";
+                txtAutor.Text = "";
+                txtCountPages.Text = "";
             }
             catch
             {
@@ -41,8 +38,8 @@ namespace z1
         {
             foreach(Book book in books)
             {
-                if (book.autor == "А.С.Пушкин" || book.autor.Contains("Пушкин"))
-                    //txtBooks.Text+=
+                if (book.autor.ToLower().Contains("пушкин"))
+                    txtBooks.Text += $"{book.name} {book.autor} {book.countPages}\r\n";
             }
         }
     }
