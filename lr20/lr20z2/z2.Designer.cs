@@ -50,7 +50,7 @@ namespace lr20z2
             // 
             // txtEnteredDate
             // 
-            this.txtEnteredDate.Location = new System.Drawing.Point(59, 44);
+            this.txtEnteredDate.Location = new System.Drawing.Point(78, 52);
             this.txtEnteredDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtEnteredDate.Name = "txtEnteredDate";
             this.txtEnteredDate.Size = new System.Drawing.Size(100, 22);
@@ -83,7 +83,7 @@ namespace lr20z2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 92);
+            this.label2.Location = new System.Drawing.Point(31, 119);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 17);
@@ -94,7 +94,7 @@ namespace lr20z2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 335);
+            this.ClientSize = new System.Drawing.Size(579, 244);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDelete);

@@ -139,24 +139,36 @@ namespace z1
             lbResult.Text = "";
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnShowInfo1_Click(object sender, EventArgs e)
         {
             Polynomial pol = createPolynomialFromGropBox(groupBox1);
             label11.Text = "Многочлен1: ";
             if (pol.arr[2]!=0)
             {
-
+                label11.Text += "график парабола";
                 if (pol.arr[2] > 0) label11.Text += "ветви вверх";
-                else if label11.Text += "ветви вниз";
+                else label11.Text += "ветви вниз";
+            }
+            else
+            {
+                label11.Text += "график прямая";
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnShowInfo2_Click(object sender, EventArgs e)
         {
             Polynomial pol = createPolynomialFromGropBox(groupBox2);
             label12.Text = "Многочлен2: ";
-            if (pol.arr[2] > 0) label12.Text += "ветви вверх";
-            else label12.Text += "ветви вниз";
+            if (pol.arr[2] != 0)
+            {
+                label12.Text += "график парабола";
+                if (pol.arr[2] > 0) label12.Text += "ветви вверх";
+                else label12.Text += "ветви вниз";
+            }
+            else
+            {
+                label12.Text += "график прямая";
+            }
         }
     }
 }
