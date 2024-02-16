@@ -43,9 +43,9 @@ namespace z1
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(259, 37);
+            this.btnAdd.Location = new System.Drawing.Point(255, 37);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(83, 23);
+            this.btnAdd.Size = new System.Drawing.Size(96, 23);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Добавить";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -109,9 +109,9 @@ namespace z1
             // 
             // btnWrite
             // 
-            this.btnWrite.Location = new System.Drawing.Point(259, 66);
+            this.btnWrite.Location = new System.Drawing.Point(255, 66);
             this.btnWrite.Name = "btnWrite";
-            this.btnWrite.Size = new System.Drawing.Size(83, 23);
+            this.btnWrite.Size = new System.Drawing.Size(96, 23);
             this.btnWrite.TabIndex = 8;
             this.btnWrite.Text = "Вывести";
             this.btnWrite.UseVisualStyleBackColor = true;
@@ -122,9 +122,9 @@ namespace z1
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(26, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(265, 17);
+            this.label4.Size = new System.Drawing.Size(113, 17);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Книги Пушкина в алфавитном порядке";
+            this.label4.Text = "Книги Пушкина:";
             // 
             // z1
             // 
