@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+
 namespace ex1.Properties
 {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

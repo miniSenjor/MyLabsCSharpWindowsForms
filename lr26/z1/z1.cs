@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace z1
 {
-    public partial class Form1 : Form
+    public partial class z1 : Form
     {
-        public Form1()
+        public z1()
         {
             InitializeComponent();
         }
 
         string number;
 
-        private void btnNewGame_Click(object sender, EventArgs e)
+        private void btnYourStart_Click(object sender, EventArgs e)
         {
             number = "";
             List<int> notUsedNumber = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
@@ -81,6 +81,15 @@ namespace z1
                         return true;
                 }
             return false;
+        }
+
+        private void btnStartAI_Click(object sender, EventArgs e)
+        {
+            int bulls=0, cows=0;
+            while (bulls<4)
+            {
+
+            }
         }
     }
 }

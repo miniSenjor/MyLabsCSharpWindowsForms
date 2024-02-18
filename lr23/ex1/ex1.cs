@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ex1
@@ -15,6 +9,56 @@ namespace ex1
         public ex1()
         {
             InitializeComponent();
+        }
+
+        //TwoDShape twoDShape = new TwoDShape(10, "suh");
+        TwoDShape twoDShape;
+        private void btnArea_Click(object sender, EventArgs e)
+        {
+            if (rbTriangle.Checked)
+            {
+                //Triangle triangle;
+                if (cBIsosceles.Checked)
+                    twoDShape = new Triangle(double.Parse(txtHeight.Text));
+                else
+                    twoDShape = new Triangle("", double.Parse(txtWidth.Text), double.Parse(txtHeight.Text));
+                txtArea.Text = twoDShape.area().ToString();
+            }
+            else
+            {
+                //Rectangle rectangle;
+                if (cBSquare.Checked)
+                    twoDShape = new Rectangle(double.Parse(txtHeight.Text));
+                else
+                    twoDShape = new Rectangle(double.Parse(txtWidth.Text), double.Parse(txtHeight.Text));
+                txtArea.Text = twoDShape.area().ToString();
+            }
+        }
+
+        private void rbTriangle_CheckedChanged(object sender, EventArgs e)
+        {
+            cBIsosceles.Visible = true;
+            cBSquare.Visible = false;
+        }
+
+        private void rbRectangle_CheckedChanged(object sender, EventArgs e)
+        {
+            cBIsosceles.Visible = false;
+            cBSquare.Visible = true;
+        }
+
+        private void ex1_Load(object sender, EventArgs e)
+        {
+            cBSquare.Location = new Point(6, 19);
+        }
+
+        private void btnName_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtName.Text = twoDShape.name;
+            }
+            catch { }
         }
     }
     //сигнатура метода - имя тип параметров метода
@@ -59,10 +103,6 @@ namespace ex1
             get { return pri_name; }
             set { pri_name = value; }
         }
-        public void showDim()
-        {
-            Console.WriteLine("Ширина и высота равны " + width + " и " + height);
-        }
         // Теперь метод аrеа() абстрактный,
         public abstract double area();
     }
@@ -70,7 +110,7 @@ namespace ex1
     class Triangle : TwoDShape
     {
         string style; // Закрытый член.
-                      // Конструктор по умолчанию,
+        // Конструктор по умолчанию,
         public Triangle()
         {
             style = "null";
@@ -107,7 +147,7 @@ namespace ex1
         base(w, h, "прямоугольник")
         { }
         // Создаем квадрат.
-        public Rectangle(double x) : base(x, "прямоугольник") { }
+        public Rectangle(double x) : base(x, "квадрат") { }
         // Создаем объект из объекта.
         public Rectangle(Rectangle ob) : base(ob) { }
         // Метод возвращает значение true, если
@@ -123,22 +163,4 @@ namespace ex1
             return width * height;
         }
     }
-    class AbsShape
-    {
-        public static void Main()
-        {
-            TwoDShape[] shapes = new TwoDShape[4];
-            shapes[0] = new Triangle("прямоугольный", 8.0, 12.0);
-            shapes[1] = new Rectangle(10);
-            shapes[2] = new Rectangle(10, 4);
-            shapes[3] = new Triangle(7.0);
-            for (int i = 0; i < shapes.Length; i++)
-            {
-                Console.WriteLine("Объектом является " + shapes[i].name);
-                Console.WriteLine("Площадь равна " + shapes[i].area());
-                Console.WriteLine("gotovo");
-            }
-        }
-    }
-
 }
