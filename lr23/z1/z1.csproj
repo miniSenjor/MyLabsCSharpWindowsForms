@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F39D815B-909A-4773-A542-D72E6E568622}</ProjectGuid>
+    <ProjectGuid>{83324CED-74DE-4EE7-8D65-8610C70CE760}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ex1</RootNamespace>
-    <AssemblyName>ex1</AssemblyName>
+    <RootNamespace>z1</RootNamespace>
+    <AssemblyName>z1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ex1.cs">
+    <Compile Include="z1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ex1.Designer.cs">
-      <DependentUpon>ex1.cs</DependentUpon>
+    <Compile Include="z1.Designer.cs">
+      <DependentUpon>z1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ex1.resx">
-      <DependentUpon>ex1.cs</DependentUpon>
+    <EmbeddedResource Include="z1.resx">
+      <DependentUpon>z1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

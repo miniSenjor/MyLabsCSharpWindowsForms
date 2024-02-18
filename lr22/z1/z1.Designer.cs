@@ -43,10 +43,9 @@ namespace z1
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(194, 30);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Location = new System.Drawing.Point(255, 37);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(62, 19);
+            this.btnAdd.Size = new System.Drawing.Size(96, 23);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Добавить";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -117,10 +116,9 @@ namespace z1
             // 
             // btnWrite
             // 
-            this.btnWrite.Location = new System.Drawing.Point(194, 54);
-            this.btnWrite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWrite.Location = new System.Drawing.Point(255, 66);
             this.btnWrite.Name = "btnWrite";
-            this.btnWrite.Size = new System.Drawing.Size(62, 19);
+            this.btnWrite.Size = new System.Drawing.Size(96, 23);
             this.btnWrite.TabIndex = 8;
             this.btnWrite.Text = "Вывести";
             this.btnWrite.UseVisualStyleBackColor = true;
@@ -132,9 +130,9 @@ namespace z1
             this.label4.Location = new System.Drawing.Point(20, 102);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(205, 13);
+            this.label4.Size = new System.Drawing.Size(113, 17);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Книги Пушкина в алфавитном порядке";
+            this.label4.Text = "Книги Пушкина:";
             // 
             // z1
             // 

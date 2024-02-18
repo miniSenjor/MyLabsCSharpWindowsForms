@@ -36,6 +36,7 @@ namespace z1
 
         private void btnWrite_Click(object sender, EventArgs e)
         {
+            txtBooks.Text = "";
             foreach(Book book in books)
             {
                 if (book.autor.ToLower().Contains("пушкин"))
