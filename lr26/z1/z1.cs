@@ -21,6 +21,9 @@ namespace z1
 
         private void btnYourStart_Click(object sender, EventArgs e)
         {
+            lBYourOptions.Items.Clear();
+            lBBulls.Items.Clear();
+            lBCows.Items.Clear();
             number = "";
             List<int> notUsedNumber = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
             Random rand = new Random();
@@ -40,7 +43,7 @@ namespace z1
             {
                 string yourOption = txtInput.Text;
                 int ckeck;
-                if (yourOption.Length!=4 || !int.TryParse(txtInput.Text,out ckeck) || ckeckRepeatNumber(number))
+                if (yourOption.Length!=4 || !int.TryParse(txtInput.Text,out ckeck) || ckeckRepeatNumber(yourOption))
                 {
                     MessageBox.Show("Некоректное число");
                     return;
@@ -56,9 +59,9 @@ namespace z1
                         else cows++;
                     }
                 }
-                txtBulls.Text += bulls + "\r\n";
-                txtCows.Text += cows + "\r\n";
-                txtYourOptions.Text += yourOption + "\r\n";
+                lBYourOptions.Items.Add(yourOption + "\r\n");
+                lBBulls.Items.Add(bulls + "\r\n");
+                lBCows.Items.Add(cows + "\r\n");
                 txtInput.Text = "";
                 if (bulls==4)
                 {
@@ -72,24 +75,47 @@ namespace z1
             }
         }
 
-        bool ckeckRepeatNumber(string number)
+        bool ckeckRepeatNumber(string yourOption)
         {
-            for (int i =0;i<number.Length;i++)
-                for (int j=i+1;j<i;j++)
-                {
-                    if (number[i] == number[j])
+            for (int i = 0; i<yourOption.Length; i++)
+                for (int j=i+1; j<yourOption.Length; j++)
+                    if (yourOption[i] == yourOption[j])
                         return true;
-                }
             return false;
         }
 
         private void btnStartAI_Click(object sender, EventArgs e)
         {
             int bulls=0, cows=0;
+            string userNumber = txtYourNumber.Text;
+            List<char> notUsedNumber = new List<char>() { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
+            string aiNumber = "01234";
+            if(!checkContain(userNumber, aiNumber, ref bulls, ref cows))
+
+
             while (bulls<4)
             {
 
             }
+        }
+
+        bool checkContain(string userNumber, string option, ref int bulls, ref int cows)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                if (option.IndexOf(userNumber[i]) != -1)
+                {
+                    if (option.IndexOf(userNumber[i]) == i)
+                        bulls++;
+                    else cows++;
+                }
+            }
+            lBAIOption.Items.Add(option + "\r\n");
+            lBAIBulls.Items.Add(bulls + "\r\n");
+            lBAICows.Items.Add(cows + "\r\n");
+            if (cows == 0 && bulls == 0)
+                return false;
+            else return true;
         }
     }
 }
