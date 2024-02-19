@@ -37,10 +37,11 @@ namespace ex1
     {
         public static void Fun(TextBox textBox)
         {
+            textBox.Text = "";
             int[] nums = new int[4];
             try
             {
-                textBox.Text = "Перед генерированием исключения.\r\n";
+                textBox.Text += "Перед генерированием исключения.\r\n";
                 // Генерируем исключение, связанное с попаданием
                 // индексавнедиапазона,
                 for (int i = 0; i < 10; i++)
@@ -53,7 +54,7 @@ namespace ex1
             catch (IndexOutOfRangeException)
             {
                 // Перехватываем исключение.
-                textBox.Text+="Индекс вне диапазона!\r\n";
+                textBox.Text += "Индекс вне диапазона!\r\n";
             }
             textBox.Text+="После catch-инструкции.\r\n";
         }
@@ -71,16 +72,16 @@ namespace ex1
             {
                 try
                 {
-                    textBox.Text+=numer[i] + " / " + denom[i] + " равно " + numer[i] / denom[i];
+                    textBox.Text+=$"{numer[i]} / { denom[i]} равно { numer[i] / denom[i]}\r\n";
                 }
                 catch (DivideByZeroException)
                 {// Перехватываем исключение
-                    textBox.Text+="Делитьнанульнельзя!";
+                    textBox.Text+="Делитьнанульнельзя!\r\n";
                 }
                 catch (IndexOutOfRangeException)
                 {
                     // Перехватываем исключение.
-                    textBox.Text+="Нет соответствующего элемента.";
+                    textBox.Text += "Нет соответствующего элемента.\r\n";
                 }
             }
         }
@@ -98,11 +99,11 @@ namespace ex1
             {
                 try
                 {
-                    Console.WriteLine(numer[i] + " / " + denom[i] + " равно " + numer[i] / denom[i]);
+                    textBox.Text += $"{numer[i]} / {denom[i]} равно {numer[i] / denom[i]}\r\n";
                 }
                 catch
                 {
-                    Console.WriteLine("Произошло некоторое исключение.");
+                    textBox.Text += "Произошло некоторое исключение.\r\n";
                 }
             }
         }
