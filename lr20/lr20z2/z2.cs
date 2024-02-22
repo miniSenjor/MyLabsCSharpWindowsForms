@@ -41,7 +41,6 @@ namespace lr20z2
             }
             int endNewFile=0;
             string[] s = File.ReadAllLines(fName);
-            string day="", month="", year="";
 
             Date enteredDate=convertStringToDate(txtEnteredDate.Text);
 
@@ -87,7 +86,6 @@ namespace lr20z2
                 sw.Close();
                 fs.Close();
             }
-
         }
 
         private Date convertStringToDate(string s) 

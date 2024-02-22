@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace z1
@@ -23,14 +16,15 @@ namespace z1
             lbB.Items.Clear();
             lbC.Items.Clear();
             Random random = new Random();
-            double[] a = new double[21], b;
+            double[] a = new double[21];
+            int[] b;
             if (random.Next(2)==0)
             {
-                b = new double[random.Next(22, 27)];
+                b = new int[random.Next(22, 27)];
             }
             else
             {
-                b = new double[random.Next(15, 21)];
+                b = new int[random.Next(15, 21)];
             }
 
             if (a.Length > b.Length) 
@@ -38,37 +32,14 @@ namespace z1
                 int lengthB = b.Length;
                 for (int i = 0; i<a.Length; i++)
                 {
-                    try
-                    {
-                        double y = - 2;
-                        y = y + 0.3 * i;
-                        y = Math.Log10(1 / (y - 1));
-                        a[i] = y;
-                        //a[i] = Math.Log10(1/(i-2+0.3*i)-1);
-                    }
-                    catch 
-                    {
-                        a[i] = 0;
-                    }
-                    lbA.Items.Add(a[i]);
+                    CalcA(i, a);
                     if(lengthB > 0)
                     {
-                        b[i] = random.Next(21) - 10;
-                        lbB.Items.Add(b[i]);
+                        CalcB(i, b, random);
                         lengthB--;
                     }
-
-                    double c=0;
-                    try
-                    {
-                        c = Math.Sqrt(a[i]-b[i-1]);
-                        lbC.Items.Add(c);
-                    }
-                    catch (IndexOutOfRangeException) 
-                    {
-                        lbC.Items.Add("Вне границ массива");
-                    }
-                    //catch ()
+                    CalcC(i, a, b);
+                    
                 }
             }
             else
@@ -76,28 +47,59 @@ namespace z1
                 int lengthA = a.Length;
                 for (int i = 0; i < b.Length; i++)
                 {
-                    b[i] = random.Next(21) - 10;
-                    lbB.Items.Add(b[i]);
+                    CalcB(i, b, random);
                     if(lengthA > 0)
                     {
-                        try
-                        {
-                            a[i] = Math.Log10(1 / (i - 2 + 0.3 * i) - 1);
-                        }
-                        catch
-                        {
-                            a[i] = 0;
-                        }
-                        lbA.Items.Add(a[i]);
+                        CalcA(i, a);
                         lengthA--;
                     }
+                    CalcC(i, a, b);
                 }
             }
         }
 
-        double Fun(double x)
+        void CalcA(int i, double[] a)
         {
-            return Math.Log10(1/x-1);
+            try
+            {
+                double x = -2;
+                x = x + 0.3 * i;
+                if (x - 1 <= 0)
+                    throw new ArgumentOutOfRangeException("x");
+                x = Math.Log10(1 / (x - 1));
+                a[i] = x;
+            }
+            catch
+            {
+                a[i] = 0;
+            }
+            lbA.Items.Add(a[i]);
+        }
+
+        void CalcB(int i, int[] b, Random random)
+        {
+            b[i] = random.Next(21) - 10;
+            lbB.Items.Add(b[i]);
+        }
+
+        void CalcC(int i, double[] a, int[] b)
+        {
+            double c = 0;
+            try
+            {
+                if (a[i] < b[i - 1])
+                    throw new ArgumentOutOfRangeException("a<b");
+                c = Math.Sqrt(a[i] - b[i - 1]);
+                lbC.Items.Add(c);
+            }
+            catch (IndexOutOfRangeException)
+            {
+                lbC.Items.Add("Вне границ массива");
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                lbC.Items.Add("корень из отрицательного числа");
+            }
         }
     }
 }

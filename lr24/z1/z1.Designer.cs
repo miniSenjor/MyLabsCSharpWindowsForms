@@ -41,9 +41,10 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(12, 77);
+            this.btnStart.Location = new System.Drawing.Point(441, 91);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.Size = new System.Drawing.Size(100, 28);
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Старт";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -52,58 +53,68 @@
             // lbA
             // 
             this.lbA.FormattingEnabled = true;
-            this.lbA.Location = new System.Drawing.Point(19, 138);
+            this.lbA.ItemHeight = 16;
+            this.lbA.Location = new System.Drawing.Point(16, 91);
+            this.lbA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbA.Name = "lbA";
-            this.lbA.Size = new System.Drawing.Size(95, 134);
+            this.lbA.Size = new System.Drawing.Size(125, 372);
             this.lbA.TabIndex = 1;
             // 
             // lbB
             // 
             this.lbB.FormattingEnabled = true;
-            this.lbB.Location = new System.Drawing.Point(120, 138);
+            this.lbB.ItemHeight = 16;
+            this.lbB.Location = new System.Drawing.Point(151, 91);
+            this.lbB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbB.Name = "lbB";
-            this.lbB.Size = new System.Drawing.Size(95, 134);
+            this.lbB.Size = new System.Drawing.Size(72, 372);
             this.lbB.TabIndex = 2;
             // 
             // lbC
             // 
             this.lbC.FormattingEnabled = true;
-            this.lbC.Location = new System.Drawing.Point(223, 138);
+            this.lbC.ItemHeight = 16;
+            this.lbC.Location = new System.Drawing.Point(231, 91);
+            this.lbC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbC.Name = "lbC";
-            this.lbC.Size = new System.Drawing.Size(95, 134);
+            this.lbC.Size = new System.Drawing.Size(202, 372);
             this.lbC.TabIndex = 3;
             // 
             // lblA
             // 
             this.lblA.AutoSize = true;
-            this.lblA.Location = new System.Drawing.Point(41, 122);
+            this.lblA.Location = new System.Drawing.Point(46, 71);
+            this.lblA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(19, 13);
+            this.lblA.Size = new System.Drawing.Size(24, 17);
             this.lblA.TabIndex = 4;
             this.lblA.Text = "a=";
             // 
             // lblB
             // 
             this.lblB.AutoSize = true;
-            this.lblB.Location = new System.Drawing.Point(156, 122);
+            this.lblB.Location = new System.Drawing.Point(172, 71);
+            this.lblB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblB.Name = "lblB";
-            this.lblB.Size = new System.Drawing.Size(19, 13);
+            this.lblB.Size = new System.Drawing.Size(24, 17);
             this.lblB.TabIndex = 5;
             this.lblB.Text = "b=";
             // 
             // lblC
             // 
             this.lblC.AutoSize = true;
-            this.lblC.Location = new System.Drawing.Point(258, 122);
+            this.lblC.Location = new System.Drawing.Point(335, 71);
+            this.lblC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblC.Name = "lblC";
-            this.lblC.Size = new System.Drawing.Size(19, 13);
+            this.lblC.Size = new System.Drawing.Size(23, 17);
             this.lblC.TabIndex = 6;
             this.lblC.Text = "c=";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::z1.Properties.Resources._1;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(375, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -112,9 +123,9 @@
             // 
             // z1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 307);
+            this.ClientSize = new System.Drawing.Size(595, 478);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblC);
             this.Controls.Add(this.lblB);
@@ -123,6 +134,7 @@
             this.Controls.Add(this.lbB);
             this.Controls.Add(this.lbA);
             this.Controls.Add(this.btnStart);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "z1";
             this.Text = "lr24z1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

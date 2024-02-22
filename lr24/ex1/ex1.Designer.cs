@@ -48,23 +48,23 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(96, 24);
+            this.textBox1.Location = new System.Drawing.Point(100, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(332, 93);
+            this.textBox1.Size = new System.Drawing.Size(314, 125);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(515, 23);
+            this.textBox2.Location = new System.Drawing.Point(100, 143);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(332, 94);
+            this.textBox2.Size = new System.Drawing.Size(314, 124);
             this.textBox2.TabIndex = 3;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(434, 23);
+            this.button2.Location = new System.Drawing.Point(15, 154);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -74,15 +74,15 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(96, 134);
+            this.textBox3.Location = new System.Drawing.Point(100, 273);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(332, 94);
+            this.textBox3.Size = new System.Drawing.Size(314, 124);
             this.textBox3.TabIndex = 5;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(15, 134);
+            this.button3.Location = new System.Drawing.Point(15, 301);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 4;
@@ -94,14 +94,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 260);
+            this.ClientSize = new System.Drawing.Size(428, 416);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ex1";
             this.Text = "lr24ex1";
             this.ResumeLayout(false);
