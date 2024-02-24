@@ -86,21 +86,60 @@ namespace z1
 
         private void btnStartAI_Click(object sender, EventArgs e)
         {
-            int bulls=0, cows=0;
+            Random rand = new Random();
+            int bulls = 0, cows = 0;
             string userNumber = txtYourNumber.Text;
-            List<char> notUsedNumber = new List<char>() { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
-            string aiNumber = "01234";
-            if(!checkContain(userNumber, aiNumber, ref bulls, ref cows))
+            List<char> numbers = new List<char>() { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
 
+            string aiNumber = "0123";
+            guessNumber(userNumber, aiNumber, numbers, rand, ref bulls, ref cows);
+            if (bulls == 4)
+                return;
+            aiNumber = "4567";
+            guessNumber(userNumber, aiNumber, numbers, rand, ref bulls, ref cows);
+            if (bulls == 4)
+                return;
+            aiNumber = "8901";
+            guessNumber(userNumber, aiNumber, numbers, rand, ref bulls, ref cows);
+            if (bulls == 4)
+                return;
 
-            while (bulls<4)
+            aiNumber = "";
+            while (bulls < 4)
             {
+                guessNumber(userNumber, aiNumber, numbers, rand, ref bulls, ref cows);
+            }
+        }
 
+        void guessNumber(string userNumber, string aiNumber, List<char> numbers, Random rand, ref int bulls, ref int cows)
+        {
+            List<char> notUsedNumber = new List<char>();
+            for (int i=0; i<numbers.Count; i++)
+                notUsedNumber.Add(numbers[i]);
+            if(aiNumber=="")
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    int r = rand.Next(notUsedNumber.Count);
+                    aiNumber += notUsedNumber[r];
+                    notUsedNumber.RemoveAt(r);
+                }
+            }
+            bool b = checkContain(userNumber, aiNumber, ref bulls, ref cows);
+            if (!b) for (int i = 0; i < aiNumber.Length; i++)
+                    numbers.Remove(aiNumber[i]);
+            if (bulls + cows == 4)
+            {
+                numbers = new List<char>();
+                for (int i = 0; i < aiNumber.Length; i++)
+                    numbers.Add(aiNumber[i]);
             }
         }
 
         bool checkContain(string userNumber, string option, ref int bulls, ref int cows)
         {
+            bulls = 0;
+            cows = 0;
             for (int i = 0; i < 4; i++)
             {
                 if (option.IndexOf(userNumber[i]) != -1)
