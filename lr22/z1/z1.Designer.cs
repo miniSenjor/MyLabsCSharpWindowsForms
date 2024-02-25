@@ -54,7 +54,7 @@ namespace z1
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(104, 18);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(76, 20);
             this.txtName.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace z1
             // txtAutor
             // 
             this.txtAutor.Location = new System.Drawing.Point(104, 41);
-            this.txtAutor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAutor.Margin = new System.Windows.Forms.Padding(2);
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(76, 20);
             this.txtAutor.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace z1
             // txtCountPages
             // 
             this.txtCountPages.Location = new System.Drawing.Point(104, 63);
-            this.txtCountPages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCountPages.Margin = new System.Windows.Forms.Padding(2);
             this.txtCountPages.Name = "txtCountPages";
             this.txtCountPages.Size = new System.Drawing.Size(76, 20);
             this.txtCountPages.TabIndex = 3;
@@ -108,7 +108,7 @@ namespace z1
             // txtBooks
             // 
             this.txtBooks.Location = new System.Drawing.Point(22, 119);
-            this.txtBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBooks.Margin = new System.Windows.Forms.Padding(2);
             this.txtBooks.Multiline = true;
             this.txtBooks.Name = "txtBooks";
             this.txtBooks.Size = new System.Drawing.Size(204, 67);
@@ -130,7 +130,7 @@ namespace z1
             this.label4.Location = new System.Drawing.Point(20, 102);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 17);
+            this.label4.Size = new System.Drawing.Size(88, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "Книги Пушкина:";
             // 
@@ -138,7 +138,7 @@ namespace z1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 211);
+            this.ClientSize = new System.Drawing.Size(361, 211);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnWrite);
             this.Controls.Add(this.txtBooks);
@@ -149,7 +149,7 @@ namespace z1
             this.Controls.Add(this.txtAutor);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnAdd);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "z1";
             this.Text = " ";
             this.ResumeLayout(false);
