@@ -31,12 +31,6 @@ namespace z1
                 tabP.Controls.Add(lb);
                 tabControl1.TabPages.Add(tabP);
             }
-            for (int i=0; i<tabControl1.TabPages.Count; i++)
-            {
-                Control control = tabControl1.TabPages[i].Controls[0];
-                if (control is ListBox list)
-                    list.Items.Add(i);
-            }
         }
 
         private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -73,8 +67,26 @@ namespace z1
                 return;
             }
 
-            string[] notes;
-            foreach ()
+            int lengthNotes = 11;
+            foreach (TabPage tabP in tabControl1.TabPages)
+                if (tabP.Controls[0] is ListBox lb)
+                    lengthNotes += lb.Items.Count;
+            string[] notes = new string[lengthNotes];
+            int index = 0;
+            foreach (TabPage tabP in tabControl1.TabPages)
+            {
+                if (tabP.Controls[0] is ListBox lb)
+                {
+                    foreach (string note in lb.Items)
+                    {
+                        notes[index]=note;
+                        index++;
+                    }
+                    if (index<lengthNotes)
+                        notes[index++] = "$";
+                }
+            }
+            
             File.WriteAllLines(fName, notes);
         }
 
@@ -83,7 +95,8 @@ namespace z1
             Control control = tabControl1.SelectedTab.Controls[0];
             if (control is ListBox lb)
             {
-                lb.Items.Add("");
+                lb.Items.Add(txtNote.Text);
+                txtNote.Text = "";
             }
         }
 
@@ -92,9 +105,14 @@ namespace z1
             Control control = tabControl1.SelectedTab.Controls[0];
             if (control is ListBox lb)
             {
-                int selectIndex = lb.SelectedIndex;
-                lb.Items.Insert(selectIndex, txtNote.Text);
-                lb.Items.RemoveAt(selectIndex + 1);
+                try
+                {
+                    int selectIndex = lb.SelectedIndex;
+                    lb.Items.Insert(selectIndex, txtNote.Text);
+                    lb.Items.RemoveAt(selectIndex + 1);
+                    txtNote.Text = "";
+                }
+                catch { }
             }
         }
 
@@ -103,7 +121,11 @@ namespace z1
             Control control = tabControl1.SelectedTab.Controls[0];
             if (control is ListBox lb)
             {
-                lb.Items.RemoveAt(lb.SelectedIndex);
+                try
+                {
+                    lb.Items.RemoveAt(lb.SelectedIndex);
+                }
+                catch { }
             }
         }
     }
