@@ -45,7 +45,7 @@
             this.btnImport.TabIndex = 0;
             this.btnImport.Text = "Загрузить изображение";
             this.btnImport.UseVisualStyleBackColor = true;
-            this.btnImport.Click += new System.EventHandler(this.button1_Click);
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // pct
             // 

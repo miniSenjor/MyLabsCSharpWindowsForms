@@ -11,7 +11,7 @@ namespace lr9z1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnImport_Click(object sender, EventArgs e)
         {
             // создаем переменную fname строкового типа
             string fname;
