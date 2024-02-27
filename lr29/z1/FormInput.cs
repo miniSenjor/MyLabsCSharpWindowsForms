@@ -12,6 +12,9 @@ namespace z1
 {
     public partial class FormInput : Form
     {
+        public string lName="";
+        public string address;
+        public string phone;
         public FormInput()
         {
             InitializeComponent();
@@ -24,8 +27,13 @@ namespace z1
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            Record record = new Record();
-            
+            if (txtLName.Text!="" && txtAddress.Text!="" && txtMaskedPhone.Text!="")
+            {
+                lName = txtLName.Text;
+                address = txtAddress.Text;
+                phone = txtMaskedPhone.Text;
+            }
+            this.Close();
         }
     }
 }
