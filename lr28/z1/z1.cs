@@ -55,33 +55,24 @@ namespace z1
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (fName == "")
-            {
-                MessageBox.Show("Файл не выбран");
+            if (saveFileDialog1.ShowDialog() != DialogResult.OK)
                 return;
-            }
-
-            int lengthNotes = 11;
-            foreach (TabPage tabP in tabControl1.TabPages)
-                if (tabP.Controls[0] is ListBox lb)
-                    lengthNotes += lb.Items.Count;
-            string[] notes = new string[lengthNotes];
+            fName = saveFileDialog1.FileName;
+            File.WriteAllText(fName, "");
             int index = 0;
             foreach (TabPage tabP in tabControl1.TabPages)
             {
                 if (tabP.Controls[0] is ListBox lb)
                 {
+
                     foreach (string note in lb.Items)
-                    {
-                        notes[index]=note;
-                        index++;
-                    }
-                    if (index<lengthNotes)
-                        notes[index++] = "$";
+                        File.AppendAllText(fName, note+"\r\n");
+                    
+                    if (index < 11)
+                        File.AppendAllText(fName, "$\r\n");
+                    index++;
                 }
             }
-            
-            File.WriteAllLines(fName, notes);
         }
 
         private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)

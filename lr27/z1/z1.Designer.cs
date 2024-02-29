@@ -410,7 +410,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "z1";
-            this.Text = "z1";
+            this.Text = "lr27z1";
             this.Load += new System.EventHandler(this.z1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

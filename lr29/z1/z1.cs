@@ -25,6 +25,7 @@ namespace z1
         private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormInput input = new FormInput();
+            phone = address = lName = "";
             input.ShowDialog();
             if (input.lName!="")
             {
@@ -65,26 +66,27 @@ namespace z1
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (fName == "")
-            {
-                MessageBox.Show("Файл не выбран");
+            if (saveFileDialog1.ShowDialog() != DialogResult.OK)
                 return;
-            }
 
-            string[] notes = new string[0];
-            Console.WriteLine(dataGridView1.Rows.Count);
-            Console.WriteLine(dataGridView1.Rows[0].Cells.Count);
-            for (int i=0; i<dataGridView1.Rows.Count; i++)
+            fName = saveFileDialog1.FileName;
+            File.WriteAllText(fName, "");
+            for (int i=0; i<dataGridView1.Rows.Count-1; i++)
             {
                 string note = "";
                 DataGridViewRow row = dataGridView1.Rows[i];
-                for (int j=0; j<dataGridView1.Rows[i].Cells.Count-1;j++)
+                //какая-то проблема с ячецками если введен с клавы, то не считывается
+                foreach (DataGridViewCell cell in row.Cells)
                 {
-                    note += dataGridView1.Rows[i].Cells[j].Value.ToString() + " ";
+                    note += cell.Value.ToString() + " ";
                 }
-                notes.Append(note);
+                File.AppendAllText(fName, note+"\r\n");
             }
-            File.WriteAllLines(fName, notes);
+        }
+
+        private void поискToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

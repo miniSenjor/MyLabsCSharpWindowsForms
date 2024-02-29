@@ -63,7 +63,7 @@
             this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(100, 28);
-            this.btnOK.TabIndex = 2;
+            this.btnOK.TabIndex = 6;
             this.btnOK.Text = "ОК";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -94,7 +94,7 @@
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(132, 22);
-            this.txtAddress.TabIndex = 5;
+            this.txtAddress.TabIndex = 2;
             // 
             // txtMaskedPhone
             // 
@@ -103,7 +103,7 @@
             this.txtMaskedPhone.Mask = "00-00-00";
             this.txtMaskedPhone.Name = "txtMaskedPhone";
             this.txtMaskedPhone.Size = new System.Drawing.Size(132, 22);
-            this.txtMaskedPhone.TabIndex = 6;
+            this.txtMaskedPhone.TabIndex = 5;
             // 
             // btnCancel
             // 
