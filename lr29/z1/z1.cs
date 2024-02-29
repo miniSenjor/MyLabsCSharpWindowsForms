@@ -75,7 +75,7 @@ namespace z1
             {
                 string note = "";
                 DataGridViewRow row = dataGridView1.Rows[i];
-                //какая-то проблема с ячецками если введен с клавы, то не считывается
+                //какая-то проблема с ячейками если введен с клавы, то не считывается
                 foreach (DataGridViewCell cell in row.Cells)
                 {
                     note += cell.Value.ToString() + " ";
@@ -86,7 +86,18 @@ namespace z1
 
         private void поискToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormSearch search = new FormSearch();
+            search.ShowDialog();
+            string lNameSearch = search.lName;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[0].Value.ToString() == lNameSearch)
+                {
+                    dataGridView1.Rows[row.Index].Selected = true;
+                    return;
+                }
+            }
+            MessageBox.Show("Объект не найден");
         }
     }
 }

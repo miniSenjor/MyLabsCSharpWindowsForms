@@ -26,7 +26,7 @@ namespace z1
                 address = txtAddress.Text;
                 phone = txtMaskedPhone.Text;
             }
-            this.Close();
+            Close();
         }
     }
 }
