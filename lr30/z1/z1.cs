@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
@@ -21,8 +14,18 @@ namespace z1
         private void btnWriteRates_Click(object sender, EventArgs e)
         {
             string[] rates = File.ReadAllLines("D://ProgramC#//GitHub//MyLabsCSharpWindowsForms//lr30//z1//txt.txt");
-            List<string> selectedDates = new List<string>();
-            selectedDates.AddRange(monthCalendar1.SelectionRange)
+            lbRates.Items.Clear();
+            DateTime minSelectedDate = monthCalendar1.SelectionRange.Start;
+            DateTime maxSelectedDate = monthCalendar1.SelectionRange.End;
+            Console.WriteLine(maxSelectedDate);
+            for (int i=0; i<rates.Length; i+=2)
+            {
+                if (Convert.ToDateTime(rates[i])>=minSelectedDate && Convert.ToDateTime(rates[i])<=maxSelectedDate)
+                    lbRates.Items.Add(rates[i] + " " + rates[i+1]);
+                
+                if (Convert.ToDateTime(rates[i]) > maxSelectedDate)
+                    break;
+            }
         }
     }
 }

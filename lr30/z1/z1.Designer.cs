@@ -42,9 +42,9 @@
             // lbRates
             // 
             this.lbRates.FormattingEnabled = true;
-            this.lbRates.Location = new System.Drawing.Point(227, 21);
+            this.lbRates.Location = new System.Drawing.Point(209, 21);
             this.lbRates.Name = "lbRates";
-            this.lbRates.Size = new System.Drawing.Size(120, 212);
+            this.lbRates.Size = new System.Drawing.Size(148, 212);
             this.lbRates.TabIndex = 1;
             // 
             // btnWriteRates
